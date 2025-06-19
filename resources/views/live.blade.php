@@ -88,7 +88,7 @@
     <div class="container-fluid w-100 text-center d-flex justify-content-center">
         <div class="row w-100">
             <div class="col-12 col-sm-12 col-md-12 col-lg-8 text-center d-flex justify-content-center">
-                <img id="live" class="border rounded-3" src="" alt="" style="font-weight: 700; font-size: 40px; color: red;display: flex;justify-content: center;align-items: center;max-height:100vh; max-width100vw"/>
+                <img id="live" class="border rounded-3" src="{{asset('assets/icons/stream_error')}}" alt="" style="font-weight: 700; font-size: 40px; color: red;display: flex;justify-content: center;align-items: center;max-height:100vh; max-width100vw"/>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center">
                 <div class="row">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="col-12 d-flex justify-content-center">
-                    <img id="detection_image" class="border rounded-3 mt-3 w-75" src="" alt="last Person detected" style="display: flex; justify-content: center; align-items: center;"/>
+                    <img id="detection_image" class="border rounded-3 mt-3 w-75" src="{{asset('assets/icons/stream_error')}}" alt="last Person detected" style="display: flex; justify-content: center; align-items: center;"/>
                 </div>
             </div>
         </div>

@@ -91,7 +91,7 @@ streamUrlRef.on("value", (snapshot) => {
     liveImg.src = `${url}`;
     liveImg.alt = "Stream URL is available";
   } else {
-    liveImg.src = `icons/stream_error.png`;
+    liveImg.src = `https://control.vats-sys.com/assets/icons/stream_error.png`;
     liveImg.alt = "Stream URL is not available";
   }
 });
@@ -106,7 +106,7 @@ detectionImageUrlRef.on("value", (snapshot) => {
     detectionImage.src = `${url}`;
     detectionImage.alt = "Detection image URL is available";
   } else {
-    detectionImage.src = `icons/stream_error.png`;
+    detectionImage.src = `https://control.vats-sys.com/assets/icons/stream_error.png`;
     detectionImage.alt = "Detection image URL is not available";
   }
 });
