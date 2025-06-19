@@ -1,0 +1,277 @@
+ * {
+            font-family: 'Orbitron';
+            padding: 0;
+            margin: 0;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        .offcanvas.show:not(.hiding), .offcanvas.showing {
+            transition: 1s;
+        }
+        .offcanvas.offcanvas-end {
+            transition: 1s;
+        }
+        .a-font:hover{
+            transform: translateX(10px);
+            transition: 0.5s;
+           color: rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important;
+           font-weight: 500;
+        }
+        @media (max-width: 575px) {
+            #carStatus,#carSpeed,#carMove{
+                font-size: medium !important;
+            }
+            #mapDiv{
+                height: 85vw;
+            }
+            .side-bar{
+            width: 60%!important;
+         }
+         .a-font{
+            font-size: 13px!important;;
+         }
+          #logs_status{
+                font-size: medium !important;
+            }
+            .logoo{
+            width: 120px;
+            animation: ab 1s 1 ease-out forwards;
+         }
+        }
+        @keyframes ab {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+           }
+        }
+        @media (min-width: 576px) {
+            #mapDiv{
+                height: 70vw;
+            }
+            .side-bar{
+            width: 50%!important;
+         }
+         .a-font{
+            font-size: 14px!important;;
+         }
+         #logs_status{
+                font-size: medium !important;
+            }
+            .logoo{
+            width: 120px;
+            animation: ab 1s 1 ease-out forwards;
+         }
+        }
+        @keyframes ab {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+        @media (min-width: 768px) {
+            #mapDiv{
+                height: 50vw;
+            }
+            .side-bar{
+            width: 40%!important;
+         }
+         .a-font{
+            font-size: 24px!important;;
+         }
+         #logs_status{
+                font-size: medium !important;
+            }
+            .logoo{
+            width: 140px;
+            animation: ab 1s 1 ease-out forwards;
+         }
+
+        }
+        @keyframes ab {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+
+        @media (min-width: 992px) {
+            #mapDiv{
+                height: 60vw;
+            }
+            .side-bar{
+            width: 40%!important;
+         }
+         .a-font{
+            font-size: 24px!important;;
+         }
+         .logoo{
+            width: 150px;
+            animation: aa 0.75s 1 ease-out forwards;
+        }
+        @keyframes aa {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+        }
+
+        @media (min-width: 1200px) {
+            #mapDiv{
+                height: 50vw;
+            }
+            .logoo{
+                width: 150px;
+                animation: aa 0.75s 1 ease-out forwards;
+        }
+        @keyframes aa {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(00px);
+            }
+        }
+        }
+
+        @media (min-width: 1400px) {
+            #mapDiv{
+                height: 35vw;
+            }
+            .logoo{
+                width: 150px;
+                animation: aa 0.75s 1 ease-out forwards;
+        }
+        @keyframes aa {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+        }
+        .logocontainer{
+            width: 100vw;
+            position: relative;
+        }
+        .logoo{
+            position:absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0.7;
+        }
+        .toggle-button-container {
+            position: relative;
+            box-sizing: border-box;
+        }
+        .toggle-button {
+            position: relative;
+            border-radius: 4px;
+        }
+        .toggle-button:before {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: #d7e3e3;
+            font-size: 12px;
+            line-height: 1;
+            padding: 5px;
+        }
+        .knob,
+        .btn-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .btn-on-off {
+            position: relative;
+            top: 50%;
+            width: 74px;
+            height: 36px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .btn-on-off.btn-pill,
+        .btn-on-off.btn-pill > .btn-bg {
+            border-radius: 100px;
+        }
+        .btn-on-off.btn-rect {
+            border-radius: 2px;
+        }
+        .checkbox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        }
+        .knob {
+         z-index: 2;
+        }     
+        .btn-bg {
+            width: 100%;
+            background-color: #fcebeb;
+            transition: 0.3s ease all;
+            z-index: 1;
+        }
+        /* Button on off */
+        #button {
+            overflow: visible;
+        }
+        #button .knob:before {
+            content: "Off";
+            background-color: #f44336;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 20px;
+            height: 10px;
+            color: #fff;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            padding: 9px 4px;
+            border-radius: 50%;
+            box-sizing: content-box;
+        }
+        #button .btn-bg,
+        #button .knob,
+        #button .knob:before {
+            transform: rotateZ(0);
+            transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+        }
+        #button .checkbox:checked + .knob {
+            transform: rotateZ(-180deg);
+        }
+        #button .checkbox:checked + .knob:before {
+            content: "On";
+            background-color: #03a9f4;
+            transform: rotateZ(180deg);
+        }
+        #button .checkbox:checked ~ .btn-bg {
+            background-color: #ebf7fc;
+            transform: rotateZ(180deg);
+        } 
+        .progress-bar-animated {
+        animation: 1s linear infinite progress-bar-stripes;
+        }
+        .progress-bar {
+        transition: 1s;
+        width: 50%;
+        }

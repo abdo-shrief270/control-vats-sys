@@ -1,0 +1,29 @@
+{
+    "id": "/",
+    "short_name":"Vats System",
+    "name":"Vats System",
+    "descrption":"Manifest File test our car app",
+    "start_url":"./index.html",
+    "display":"standalone",
+    "orientation":"natural",
+    "scope":"/",
+    "background_color":"#010c23",
+    "theme_color":"#201810",
+    "icons":[
+        {
+            "src":"icons/car_128.png",
+            "sizes":"128x128",
+            "type":"image/png"
+        },
+        {
+            "src":"icons/car_256.png",
+            "sizes":"256x256",
+            "type":"image/png"
+        },
+        {
+            "src":"icons/car_512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+}

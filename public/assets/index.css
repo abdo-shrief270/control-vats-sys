@@ -1,0 +1,170 @@
+ * {
+            font-family: 'Orbitron';
+            padding: 0;
+            margin: 0;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        .offcanvas.show:not(.hiding), .offcanvas.showing {
+            transition: 1s;
+        }
+        .offcanvas.offcanvas-end {
+            transition: 1s;
+        }
+        .a-font:hover{
+            transform: translateX(10px);
+            transition: 0.5s;
+           color: rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important;
+           font-weight: 500;
+        }
+        .control-fs{
+            font-size: 14px !important;
+        }
+        @media (max-width: 575px) {
+            #carStatus,#carSpeed,#carMove{
+                font-size: medium !important;
+            }
+            #mapDiv{
+                height: 85vw;
+            }
+            .side-bar{
+            width: 60%!important;
+         }
+         .a-font{
+            font-size: 13px!important;;
+         }
+         .logoo{
+            width: 120px;
+            animation: ab 1s 1 ease-out forwards;
+         }
+
+        }
+        @keyframes ab {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+           }
+        }
+        @media (min-width: 576px) {
+            #mapDiv{
+                height: 70vw;
+            }
+            .side-bar{
+            width: 50%!important;
+         }
+         .a-font{
+            font-size: 14px!important;;
+         }
+         .logoo{
+            width: 120px;
+            animation: ab 1s 1 ease-out forwards;
+         }
+
+        }
+        @keyframes ab {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+
+        @media (min-width: 768px) {
+            #mapDiv{
+                height: 50vw;
+            }
+            .side-bar{
+            width: 40%!important;
+         }
+         .a-font{
+            font-size: 24px!important;;
+         }
+         .logoo{
+            width: 140px;
+            animation: ab 1s 1 ease-out forwards;
+         }
+
+        }
+        @keyframes ab {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+        
+
+        @media (min-width: 992px) {
+            #mapDiv{
+                height: 60vw;
+            }
+            .side-bar{
+            width: 40%!important;
+         }
+         .a-font{
+            font-size: 24px!important;;
+         }
+         .logoo{
+            width: 150px;
+            animation: aa 0.75s 1 ease-out forwards;
+        }
+        @keyframes aa {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+        }
+
+        @media (min-width: 1200px) {
+            #mapDiv{
+                height: 50vw;
+            }
+            .logoo{
+                width: 150px;
+                animation: aa 0.75s 1 ease-out forwards;
+        }
+        @keyframes aa {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(00px);
+            }
+        }
+        }
+
+        @media (min-width: 1400px) {
+            #mapDiv{
+                height: 35vw;
+            }
+            .logoo{
+                width: 150px;
+                animation: aa 0.75s 1 ease-out forwards;
+        }
+        @keyframes aa {
+            from{
+                transform: translateX(400px);
+            }
+           to{
+                transform: translateX(-10px);
+            }
+        }
+    }
+    .logocontainer{
+        width: 100vw;
+        position: relative;
+    }
+        .logoo{
+            position:absolute;
+            bottom: 0px;
+            right: 0;
+            opacity: 0.7;
+        }
