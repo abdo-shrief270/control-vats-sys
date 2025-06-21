@@ -1,17 +1,17 @@
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('assets/sw.js')
     .then((reg)=>{
-        console.log("file is here", reg)
+        // console.log("file is here", reg)
     })
     .catch((err)=>{
-        console.log("Error", err)
+        // console.log("Error", err)
     })
 }
 Notification.requestPermission().then((permission)=>{
     if(permission === 'granted'){
-        console.log("Permission granted");
+        // console.log("Permission granted");
     }else{
-        console.log("Permission denied");
+        // console.log("Permission denied");
     }
 });
 
@@ -29,10 +29,10 @@ installBtn.addEventListener("click", (e)=>{
         deferredPrompt.prompt();
         deferredPrompt.userChoice.then((choiceResult)=>{
             if(choiceResult.outcome === 'accepted'){
-                console.log("User accepted the install");
+                // console.log("User accepted the install");
                 installBtn.style.display = "none";
             }else{
-                console.log("User dismissed the A2HS prompt");
+                // console.log("User dismissed the A2HS prompt");
             }
         });
     }

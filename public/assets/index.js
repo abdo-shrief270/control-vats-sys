@@ -43,7 +43,6 @@
             const data = snapshot.val();
             if (data) {
                 Object.entries(data).forEach(([key, location]) => {
-                    console.log(location);
                     const { latitude, longitude, altitude } = location;
                     //console.log(Retrieved Location: Lat: ${latitude}, Long: ${longitude}, Alt: ${altitude});
                     updateMap(parseFloat(latitude), parseFloat(longitude), 50);

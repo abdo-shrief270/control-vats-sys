@@ -87,8 +87,9 @@
     </nav>
     <div class="container-fluid w-100 text-center d-flex justify-content-center">
         <div class="row w-100">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-8 text-center d-flex justify-content-center">
-                <img id="live" class="border rounded-3" src="{{asset('assets/icons/stream_error')}}" alt="" style="font-weight: 700; font-size: 40px; color: red;display: flex;justify-content: center;align-items: center;max-height:100vh; max-width100vw"/>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 text-center d-flex justify-content-center flex-column">
+                <img id="live" class="border rounded-3 col-12" src="{{asset('assets/icons/stream_error.png')}}" alt="" style="font-weight: 700; font-size: 40px; color: red;display: flex;justify-content: center;align-items: center;max-height:100vh; max-width:100vw"/>
+                <span class="col-12">Live Stream Video</span>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center">
                 <div class="row">
@@ -99,8 +100,9 @@
                         <span id="carStatus" class="badge w-100 fs-5 mt-3 py-3"></span>
                     </div>
                 </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <img id="detection_image" class="border rounded-3 mt-3 w-75" src="{{asset('assets/icons/stream_error')}}" alt="last Person detected" style="display: flex; justify-content: center; align-items: center;"/>
+                <div class="col-12 d-flex justify-content-center row ">
+                    <img id="detection_image" class="border rounded-3 mt-3 col-9" src="{{asset('assets/icons/stream_error.png')}}" alt="last Person detected" style="display: flex; justify-content: center; align-items: center;"/>
+                    <span class="col-12">Last Detected Image</span>
                 </div>
             </div>
         </div>
