@@ -189,8 +189,7 @@
             <div class="col-12 pb-3">
                 <div class="px-2">
                     <div id="seqSec" class="col-12 pb-3">
-                <div class="px-2">
-                    <div class="p-2">
+                        <div class="p-2">
                         <div class="text-center">
                             <strong class="text-capitalize">&lt; Execute Sequence &gt;</strong>
                         </div>
@@ -220,9 +219,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
+                    </div>
                     <div class="p-2">
                         <div class="text-center">
                             <strong class="text-capitalize">&lt; Execute path &gt;</strong>

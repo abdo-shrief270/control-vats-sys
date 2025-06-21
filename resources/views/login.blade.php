@@ -269,7 +269,7 @@
         <div class="left1">
             <h1>Hello , Welcome</h1>
             <p>Don't have an account?</p>
-            <a href="{{route('home')}}"><button style="cursor: pointer;" id="btn1">  Contact Us</button> </a>
+            <a href="https://www.vats-sys.com"><button style="cursor: pointer;" id="btn1">  Contact Us</button> </a>
         </div>
 
         <form method="POST" action="{{route('login')}}" class="right1">
