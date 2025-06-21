@@ -88,7 +88,7 @@
     <div class="container-fluid w-100 text-center d-flex justify-content-center">
         <div class="row w-100">
             <div class="col-12 col-sm-12 col-md-12 col-lg-8 text-center d-flex justify-content-center align-items-center flex-column">
-                <img id="live" class="border rounded-3 col-8" src="{{asset('assets/icons/stream_error.png')}}" alt="" style="font-weight: 700; font-size: 40px; color: red;display: flex;justify-content: center;align-items: center;max-height:100vh;"/>
+                <img id="live" class="border rounded-3 col-6" src="{{asset('assets/icons/stream_error.png')}}" alt="" style="font-weight: 700; font-size: 40px; color: red;display: flex;justify-content: center;align-items: center;max-height:100vh;"/>
                 <span class="col-12">Live Stream Video</span>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center">
