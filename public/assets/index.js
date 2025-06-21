@@ -20,8 +20,8 @@
         // Map Initialization
         var map = L.map('mapDiv').setView([0, 0], 10); // Default center (can be updated later)
         // Google Satellite Layer
-        var esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            attribution: '© Esri'
+        var esriSatellite = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© AVDTM'
         });
         esriSatellite.addTo(map);
         // Marker and Circle Variables
@@ -32,7 +32,7 @@
                 map.removeLayer(marker);
             }
             // Add Marker and Circle
-            marker = L.marker([latitude, longitude]).addTo(map);
+            marker = L.marker([latitude, longitude]).addTo(map).bindTooltip("car Location", { permanent: true, direction: 'top', className: 'location-label' });
             // Fit bounds around the marker and circle
             var featureGroup = L.featureGroup([marker]).addTo(map);
             map.fitBounds(featureGroup.getBounds());
@@ -51,7 +51,7 @@
             } else {
                 console.log('No location data found in Firebase.');
             }
-            
+
         });
 
         const statusRef = firebase.database().ref('moving');
@@ -89,7 +89,7 @@
             carstatus.style.backgroundColor = "#7A28351A";
             carstatus.innerText = "No one in the car";
         }
-        
+
         });
 
 
@@ -112,7 +112,7 @@
                 }
              }
          });
-        
+
         let stored_log_status = "";
         let stored_log_text = "";
         const status_s = firebase.database().ref('log');
