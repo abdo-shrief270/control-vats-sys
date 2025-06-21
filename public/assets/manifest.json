@@ -1,14 +1,14 @@
 {
     "id": "/",
-    "short_name":"Vats System",
-    "name":"Vats System",
+    "short_name":"AVDTM System",
+    "name":"AVDTM System",
     "descrption":"Manifest File test our car app",
     "start_url":"../index.php",
     "display":"standalone",
     "orientation":"natural",
     "scope":"/",
-    "background_color":"#010c23",
-    "theme_color":"#201810",
+    "background_color":"#FFFFFF",
+    "theme_color":"#FFFFFF",
     "icons":[
         {
             "src":"icons/car_128.png",
