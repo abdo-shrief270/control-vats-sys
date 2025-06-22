@@ -105,39 +105,3 @@
                 document.getElementById("rpiIp").innerText = data;
             }
         });
-        //////////// Gps Thread
-        const gpsThreadRef = firebase.database().ref('gps_thread');
-        gpsThreadRef.on('value', (snapshot) => {
-            const data = snapshot.val();
-            if (data) {
-                document.getElementById("gpsThread").checked = true;
-                document.getElementById("gpsThread").value = "true";
-            } else {
-                document.getElementById("gpsThread").checked = false;
-                document.getElementById("gpsThread").value = "false";
-            }
-        });
-        document.getElementById("gpsThread").addEventListener("change", function() {
-            const isChecked = this.checked;
-            const updates = {};
-            updates['/gps_thread'] = isChecked;
-            firebase.database().ref().update(updates);
-        });
-         //////////// SMS Alert Thread
-         const smsAlertThreadRef = firebase.database().ref('sms_thread');
-         smsAlertThreadRef.on('value', (snapshot) => {
-             const data = snapshot.val();
-             if (data) {
-                 document.getElementById("smsAlertThread").checked = true;
-                 document.getElementById("smsAlertThread").value = "true";
-             } else {
-                 document.getElementById("smsAlertThread").checked = false;
-                 document.getElementById("smsAlertThread").value = "false";
-             }
-         });
-         document.getElementById("smsAlertThread").addEventListener("change", function() {
-             const isChecked = this.checked;
-             const updates = {};
-             updates['/sms_thread'] = isChecked;
-             firebase.database().ref().update(updates);
-         });

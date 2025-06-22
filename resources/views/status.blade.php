@@ -86,28 +86,6 @@
         </div>
     </nav>
     <div class="container d-flex flex-column gap-3">
-        <div class="row">
-            <div class="col-6">
-                <p class="text-center">GPS Alert</p>
-                <div class="toggle-button gd">
-                    <div class="btn-on-off btn-pill" id="button">
-                    <input id="gpsThread" value="false" type="checkbox" class="checkbox" />
-                    <div class="knob"></div>
-                    <div class="btn-bg"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <p class="text-center">SMS Alert</p>
-                <div class="toggle-button gd">
-                    <div class="btn-on-off btn-pill" id="button">
-                    <input id="smsAlertThread" value="false" type="checkbox" class="checkbox" />
-                    <div class="knob"></div>
-                    <div class="btn-bg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row justify-content-around p-2">
             <strong class="fs-2 text-center">Ultrasonic reads</strong>
             <div class="col-md-3 p-1 p-lg-4">
