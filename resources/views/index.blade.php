@@ -99,9 +99,6 @@
                         <span id="carMove"class="badge w-100 fs-5 mt-3 py-3"></span>
                     </div>
                     <div class="col-12">
-                        <span id="carSpeed"class="badge w-100 fs-5 mt-3 py-3"></span>
-                    </div>
-                    <div class="col-12">
                         <span id="carStatus"class="badge w-100 fs-5 mt-3 py-3"></span>
                     </div>
                 </div>
